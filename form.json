@@ -1,0 +1,122 @@
+{
+  "id": 1,
+  "name": "Create a new project",
+  "description": "Create a new project",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Audit",
+      "columns": 2,
+      "fields": [
+        {
+          "id": 1,
+          "name": "createdby",
+          "label": "Created By",
+          "type": "text",
+          "value": "Solid snake",
+          "placeholder": "",
+          "readonly": true,
+          "order": 1
+        },
+        {
+          "id": 2,
+          "name": "createddate",
+          "label": "Created Date",
+          "type": "datetime",
+          "value": "",
+          "placeholder": "",
+          "readonly": false,
+          "order": 2
+        },
+        {
+          "id": 3,
+          "name": "modifiedby",
+          "label": "Modified By",
+          "type": "text",
+          "value": "",
+          "placeholder": "",
+          "readonly": true,
+          "order": 3
+        },
+        {
+          "id": 4,
+          "name": "modifieddate",
+          "label": "Modified Date",
+          "type": "datetime",
+          "value": "",
+          "placeholder": "",
+          "readonly": true,
+          "order": 4
+        }
+      ],
+      "readonly": false,
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "General",
+      "columns": 2,
+      "fields": [
+        {
+          "id": 2,
+          "name": "description",
+          "label": "Description",
+          "type": "textarea",
+          "value": "",
+          "placeholder": "Project description",
+          "readonly": false,
+          "order": 3,
+          "columns": 2
+        },
+        {
+          "id": 1,
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "value": "",
+          "placeholder": "Project name",
+          "readonly": false,
+          "order": 1,
+          "validations": [
+            {
+              "name": "required",
+              "message": "The name is required"
+            },
+            {
+              "name": "minLength",
+              "message": "The name must be at least 3 characters long",
+              "value": 3
+            },
+            {
+              "name": "maxLength",
+              "message": "The name cannot be more than 50 characters long",
+              "value": 50
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "status",
+          "label": "Status",
+          "type": "select",
+          "value": "",
+          "placeholder": "Select a status",
+          "readonly": false,
+          "order": 2,
+          "options": [
+            {
+              "value": 1,
+              "label": "Active"
+            },
+            {
+              "value": 2,
+              "label": "Inactive"
+            }
+          ]
+        }
+      ],
+      "readonly": false,
+      "order": 2
+    }
+  ]
+}

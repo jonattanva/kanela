@@ -7,16 +7,25 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "cypress:open": "cypress open-ct",
+    "test": "vitest"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "~1.0.0-next.38",
+    "@cypress/vite-dev-server": "~2.2.2",
+    "@sveltejs/vite-plugin-svelte": "~1.0.0-next.39",
+    "@testing-library/cypress": "~8.0.2",
+    "@testing-library/svelte": "~3.0.3",
     "@tsconfig/svelte": "~3.0.0",
-    "svelte": "~3.46.0",
+    "c8": "~7.11.0",
+    "cypress": "~9.5.1",
+    "jsdom": "~19.0.0",
+    "svelte": "~3.46.4",
     "svelte-check": "~2.4.5",
     "svelte-preprocess": "~4.10.4",
     "tslib": "~2.3.1",
     "typescript": "~4.6.2",
-    "vite": "~2.8.5"
+    "vite": "~2.8.6",
+    "vitest": "~0.5.9"
   }
 }
